@@ -171,7 +171,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="photo-wall-requirements">photo-wall-requirements</h1><p>&#x7167;&#x7247;&#x5899;&#x7684;&#x9700;&#x6C42;&#x6587;&#x6863;&#x4EE5;&#x53CA;&#x8BBE;&#x8BA1;&#x6587;&#x6863;</p>
+                                <h1 id="photo-wall-requirements">photo-wall-requirements</h1><p>&#x7167;&#x7247;&#x5899;&#x7684;&#x9700;&#x6C42;&#x6587;&#x6863;&#x4EE5;&#x53CA;&#x8BBE;&#x8BA1;&#x6587;&#x6863;&#x3002;</p><p>&#x8BE5;&#x6587;&#x6863;&#x662F; gitbook &#x6587;&#x6863;&#x3002;&#x540C;&#x65F6;&#x8BE5;&#x9879;&#x76EE;&#x542F;&#x7528;&#x4E86;&#x5728; GitHub &#x4E0A;&#x7684;&#x5728;&#x7EBF;&#x6F14;&#x793A;</p><h2 id="gitbook-&#x6587;&#x6863;&#x542F;&#x52A8;">gitbook &#x6587;&#x6863;&#x542F;&#x52A8;</h2><h3 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h3><p>&#x786E;&#x4FDD;&#x4F60;&#x7684;&#x673A;&#x5668;&#x4E2D;&#x6709; gitbook &#x547D;&#x4EE4;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4F60;&#x53EF;&#x4EE5;&#x6267;&#x884C; <code>npm i -g gitbook</code></p><h3 id="&#x542F;&#x52A8;">&#x542F;&#x52A8;</h3><p><code>gitbook serve</code></p><p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8F93;&#x5165;<a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a></p><h2 id="github-&#x5728;&#x7EBF;&#x6F14;&#x793A;&#x7684;&#x90E8;&#x7F72;">GitHub &#x5728;&#x7EBF;&#x6F14;&#x793A;&#x7684;&#x90E8;&#x7F72;</h2><ol><li><p>&#x5207;&#x6362;&#x5230; gh-pages &#x5206;&#x652F; git checkout -b gh-pages(&#x521B;&#x5EFA; gh-pages &#x5E76;&#x5207;&#x6362;&#x5230;&#x8BE5;&#x5206;&#x652F;)/ git checkout gh-pages (&#x5207;&#x6362;&#x5230; gh-pages &#x5206;&#x652F;)</p></li>
+<li><p>&#x6267;&#x884C; npm run build &#x547D;&#x4EE4;&#xFF0C;gitbook &#x9879;&#x76EE;&#x4F7F;&#x7528;<code>gitbook build</code>&#xFF0C;&#x6784;&#x5EFA;&#x4EE3;&#x7801;</p></li>
+<li><p>&#x5C06; build/dist &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x5939;&#x63A8;&#x9001;&#x81F3;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x7684; gh-pages &#x5206;&#x652F;&#xFF0C;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p></li>
+<li><p>&#x5F3A;&#x5236;&#x6DFB;&#x52A0; /<code>_book</code>(gitbook &#x9879;&#x76EE;)&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x56E0;&#x4E3A;.gitignore &#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x5FFD;&#x7565;&#x8BE5;&#x6587;&#x4EF6;
+<code>git add -f _book</code>
+&#x200B;</p></li>
+<li><p>&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x5730;&#x6682;&#x5B58;&#x533A;
+<code>git commit -m &apos;Initial the page of project&apos;</code>
+&#x200B;</p></li>
+<li>&#x90E8;&#x7F72; dist &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x4EE3;&#x7801;
+<code>git subtree push --prefix _book origin gh-pages</code>
+</li></ol>
+
                                 
                                 </section>
                             
@@ -210,7 +222,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"前言","level":"1.1","depth":1,"next":{"title":"前端","level":"1.2","depth":1,"path":"font-end/index.md","ref":"font-end/index.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-08-10T03:17:30.012Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2018-08-10T03:17:58.507Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"前言","level":"1.1","depth":1,"next":{"title":"前端","level":"1.2","depth":1,"path":"font-end/index.md","ref":"font-end/index.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-08-10T03:26:05.774Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2018-08-10T03:26:12.700Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -218,10 +230,6 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
